@@ -68,7 +68,7 @@ def read_file(file_id:str,db: Session = Depends(get_db)):
     else:
         db.delete(file)
         db.commit()
-    return {"message":"{file_id} does not exists!"}
+    return {"message":f"{file_id} does not exists!"}
 
 @app.get("/files",response_model=list[schemas.FileResponseModel])
 def list_files( skip:int =0,limit:int =10,db: Session = Depends(get_db)):
