@@ -1,7 +1,7 @@
 ﻿# Dropbox-backend
-Requiremnt:
-Python version 3.10
-Git
+Requirements:
+1. Python version 3.10
+2. Git
 
 Steps:
 1. Clone the repository using git clone in the terminal.
